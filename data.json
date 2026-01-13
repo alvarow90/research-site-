@@ -56,7 +56,7 @@
         {"name": "Dr Fabien Dufoulon", "email": "f.dufoulon@lancaster.ac.uk", "theme": "Design and Analysis of Algorithms", "image": "Fabien.jpg"},
         {"name": "Dr Fabio Papacchini", "email": "f.papacchini@lancaster.ac.uk", "theme": "Logic, Semantics and Computation", "image": "Fabio.jpg"},
         {"name": "Dr Andrew Sogokon", "email": "a.sogokon@lancaster.ac.uk", "theme": "Formal Methods", "image": "Andrew.jpg"},
-        {"name": "Dr Pascal Welke", "email": "p.welke@lancaster.ac.uk", "theme": "Design and Analysis of Algorithms", "image": "Pascal.jpg"}
+        {"name": "Dr Pascal VASCO Welke", "email": "p.welke@lancaster.ac.uk", "theme": "Design and Analysis of Algorithms", "image": "Pascal.jpg"}
     ],
     "seminars": [
         {
