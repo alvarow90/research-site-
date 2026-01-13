@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-4">Seminars</h1>
+
+{% for category, items in seminars|groupby('type') %}
+<h3 class="mt-5">{{ category }} Seminars</h3>
+<div class="table-responsive">
+    <table class="table table-hover table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Speaker</th>
+                <th>Location</th>
+                <th>Title</th>
+                <th>Abstract</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sem in items %}
+            <tr>
+                <td>{{ sem.date }}</td>
+                <td>{{ sem.time }}</td>
+                <td><strong>{{ sem.speaker }}</strong></td>
+                <td>{{ sem.location }}</td>
+                <td>{{ sem.title }}</td>
+                <td>{{ sem.abstract }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endfor %}
+{% endblock %}

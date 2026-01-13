@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-5 text-center">Our Team</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for person in people %}
+    <div class="col">
+        <div class="card h-100 text-center border-0 shadow-sm">
+            <div class="card-body">
+                <img src="{{ url_for('static', filename='images/' ~ person.image) }}" class="rounded-circle mb-3" alt="{{ person.name }}" width="120" height="120">
+                <h5 class="card-title">{{ person.name }}</h5>
+                <p class="card-text text-danger mb-1">{{ person.theme }}</p>
+                <p class="card-text"><small class="text-muted">{{ person.email }}</small></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

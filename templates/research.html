@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="mb-5">Research Themes</h1>
+
+<div class="row">
+    {% for theme in themes %}
+    <div class="col-12 mb-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title text-danger">{{ theme.name }}</h3>
+                <p class="card-text lead">{{ theme.description }}</p>
+                <ul class="mb-4">
+                    {% for point in theme.points %}
+                    <li>{{ point }}</li>
+                    {% endfor %}
+                </ul>
+                <hr>
+                <h6 class="text-muted">Members Involved:</h6>
+                <ul class="list-inline">
+                    {% for member in theme.members %}
+                    <li class="list-inline-item badge bg-secondary">{{ member }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

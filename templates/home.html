@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8">
+        <h1 class="mb-4">About Us</h1>
+        <p class="lead">
+            Our research group investigates the logical and mathematical foundations of computer science. We seek to deepen the understanding of the essence, power and limitations of computing systems, while developing mathematical tools and efficient algorithms to tackle complex computational challenges.
+        </p>
+        <p>
+            Our ultimate goal is to establish rigorous foundations for the robust specification, construction and verification of systems, ranging from software to hybrid dynamical systems. We strive to combine mathematical rigour with practical impact, fostering innovation that bridges theoretical insight with real-world computing systems. Our group actively welcomes collaborations and new researchers interested in advancing the foundations of computer science.
+        </p>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                Latest News
+            </div>
+            <ul class="list-group list-group-flush">
+                {% for item in news %}
+                <li class="list-group-item">
+                    <small class="text-muted">{{ item.date }}</small>
+                    <h6 class="my-1">{{ item.title }}</h6>
+                    <p class="mb-1 small">{{ item.content }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
