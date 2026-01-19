@@ -18,11 +18,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('show_people') }}">People</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('research') }}">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('show_seminars') }}">Seminars</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('opportunities') }}">Opportunities</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.endpoint == 'home' %}active{% endif %}" href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.endpoint == 'show_people' %}active{% endif %}" href="{{ url_for('show_people') }}">People</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.endpoint == 'research' %}active{% endif %}" href="{{ url_for('research') }}">Research</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.endpoint == 'show_seminars' %}active{% endif %}" href="{{ url_for('show_seminars') }}">Seminars</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.endpoint == 'opportunities' %}active{% endif %}" href="{{ url_for('opportunities') }}">Opportunities</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +39,8 @@
             <div class="row align-items-center">
                 <div class="col-md-6 text-start">
                     <h5 class="mb-0">{{ school_name }}</h5>
-                    <p class="text-muted mb-0">{{ group_name }}</p>
+                    <p class="text-muted mb-0">Theoretical Computer Science Group</p>
+                    <p class="text-muted mb-0"><small>Designed by: Alvaro</small></p>
                 </div>
                 <div class="col-md-6 text-end">
                     <img src="{{ url_for('static', filename='images/logo.png') }}" alt="University Logo" height="60">

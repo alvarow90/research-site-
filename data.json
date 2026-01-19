@@ -1,5 +1,5 @@
 {
-    "group_name": "Theoretical Computer Science",
+    "group_name": "Theoretical Computer Science @ Lancaster",
     "school_name": "School of Computing & Communications",
     "latest_news": [
         {
@@ -25,7 +25,7 @@
                 "Knowledge representation",
                 "Mechanisation of proofs and logical operations"
             ],
-            "members": ["Dr Marco Caminati", "Dr Fabio Papacchini"]
+            "members": ["Dr Marco Caminati", "Dr Fabio Papacchini", "Dr Damian Arellanes"]
         },
         {
             "name": "Formal Methods",
@@ -37,7 +37,7 @@
                 "Languages and frameworks for the formal specification of software systems",
                 "Proof assistants and constraint solvers for certified solutions in safety-critical domains"
             ],
-            "members": ["Dr Damian Arellanes", "Dr Andrew Sogokon"]
+            "members": ["Dr Damian Arellanes", "Dr Andrew Sogokon", "Dr Marco Caminati", "Dr Fabio Papacchini"]
         },
         {
             "name": "Design and Analysis of Algorithms",
@@ -51,12 +51,12 @@
         }
     ],
     "people": [
-        {"name": "Dr Damian Arellanes", "email": "damian.arellanes@lancaster.ac.uk", "theme": "Formal Methods", "image": "Damian.jpg"},
-        {"name": "Dr Marco Caminati", "email": "m.caminati@lancaster.ac.uk", "theme": "Logic, Semantics and Computation", "image": "Marco.jpg"},
-        {"name": "Dr Fabien Dufoulon", "email": "f.dufoulon@lancaster.ac.uk", "theme": "Design and Analysis of Algorithms", "image": "Fabien.jpg"},
-        {"name": "Dr Fabio Papacchini", "email": "f.papacchini@lancaster.ac.uk", "theme": "Logic, Semantics and Computation", "image": "Fabio.jpg"},
-        {"name": "Dr Andrew Sogokon", "email": "a.sogokon@lancaster.ac.uk", "theme": "Formal Methods", "image": "Andrew.jpg"},
-        {"name": "Dr Pascal  Welke", "email": "p.welke@lancaster.ac.uk", "theme": "Design and Analysis of Algorithms", "image": "Pascal.jpg"}
+        {"name": "Dr Damian Arellanes", "email": "damian.arellanes@lancaster.ac.uk", "theme": ["Formal Methods", "Logic, Semantics and Computation"], "image": "Damian.jpg"},
+        {"name": "Dr Marco Caminati", "email": "m.caminati@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Marco.jpg"},
+        {"name": "Dr Fabien Dufoulon", "email": "f.dufoulon@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Fabien.jpg"},
+        {"name": "Dr Fabio Papacchini", "email": "f.papacchini@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Fabio.jpg"},
+        {"name": "Dr Andrew Sogokon", "email": "a.sogokon@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Andrew.jpg"},
+        {"name": "Dr Pascal Welke", "email": "p.welke@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Pascal.jpg"}
     ],
     "seminars": [
         {

@@ -3,7 +3,7 @@
 {% block content %}
 <h1 class="mb-4">Seminars</h1>
 
-{% for category, items in seminars|groupby('type') %}
+{% for category, items in seminars|groupby('type')|reverse %}
 <h3 class="mt-5">{{ category }} Seminars</h3>
 <div class="table-responsive">
     <table class="table table-hover table-striped">

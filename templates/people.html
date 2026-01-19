@@ -8,9 +8,11 @@
     <div class="col">
         <div class="card h-100 text-center border-0 shadow-sm">
             <div class="card-body">
-                <img src="{{ url_for('static', filename='images/' ~ person.image) }}" class="rounded-circle mb-3" alt="{{ person.name }}" width="120" height="120">
+                <img src="{{ url_for('static', filename='images/' ~ person.image) }}" class="rounded-circle mb-3" alt="{{ person.name }}" width="120" height="120" style="object-fit: cover;">
                 <h5 class="card-title">{{ person.name }}</h5>
-                <p class="card-text text-danger mb-1">{{ person.theme }}</p>
+                {% for theme in person.theme %}
+                <p class="card-text text-danger mb-1">{{ theme }}</p>
+                {% endfor %}
                 <p class="card-text"><small class="text-muted">{{ person.email }}</small></p>
             </div>
         </div>
