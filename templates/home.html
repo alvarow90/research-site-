@@ -8,7 +8,7 @@
             Our research group investigates the logical and mathematical foundations of computer science. We seek to deepen the understanding of the essence, power and limitations of computing systems, while developing mathematical tools and efficient algorithms to tackle complex computational challenges.
         </p>
         <p>
-            Our ultimate goal is to establish rigorous foundations for the robust specification, construction and verification of systems, ranging from software to hybrid dynamical systems. We strive to combine mathematical rigour with practical impact, fostering innovation that bridges theoretical insight with real-world computing systems. Our group actively welcomes collaborations and new researchers interested in advancing the foundations of computer science.
+            Our ultimate goal is to establish rigorous foundations for the robust specification, construction and verification of systems, ranging from software to hybrid dynamical systems. We strive to combine mathematical rigour with practical impact, fostering innovation that bridges theoretical insight with real-world computing systems.
         </p>
     </div>
     <div class="col-lg-4">
@@ -20,7 +20,7 @@
                 {% for item in news %}
                 <li class="list-group-item">
                     <small class="text-muted">{{ item.date }}</small>
-                    <h6 class="my-1">{{ item.title }}</h6>
+                    <h6 class="my-1"><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer" style="color: #3556B5;">{{ item.title }}</a></h6>
                     <p class="mb-1 small">{{ item.content }}</p>
                 </li>
                 {% endfor %}
