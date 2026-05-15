@@ -8,6 +8,12 @@ body {
     font-size: 1.25rem;
 }
 
+.site-title {
+    white-space: normal;
+    line-height: 1.2;
+    max-width: min(100%, 32rem);
+}
+
 h1, h2, h3 {
     color: #b0120a;
 }
@@ -33,3 +39,14 @@ footer {
     background-color: #f8d7da;
 }
 
+.footer-note {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 991.98px) {
+    .site-title {
+        font-size: 1rem;
+        max-width: calc(100% - 4rem);
+    }
+}

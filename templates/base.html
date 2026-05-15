@@ -12,7 +12,7 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('home') }}">{{ group_name }}</a>
+            <a class="navbar-brand site-title" href="{{ url_for('home') }}">{{ group_name }}</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +41,7 @@
                     <p class="text-muted mb-0">{{ school_name }}</p>
                     <p class="text-muted mb-0">Theoretical Computer Science Group</p>
                     <p class="text-muted mb-0"><small>Website designed by Alvaro Gallardo. Built with Flask and Bootstrap 5.</small></p>
-                    <p class="text-muted mb-0"><small>Photographs, logos, and institutional marks are used for identification purposes and remain the property of their respective owners.</small></p>
+                    <p class="text-muted mb-0 footer-note"><small>Photographs, logos, and institutional marks remain the property of their respective owners.</small></p>
                 </div>
                 <div class="col-md-6 text-end">
                     <img src="{{ url_for('static', filename='images/logo.png') }}" alt="University Logo" height="60">
