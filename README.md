@@ -1,25 +1,25 @@
 # Theoretical Computer Science @ Lancaster
 
-Sitio web institucional para un grupo de investigacion en ciencias de la computacion teorica. La aplicacion presenta informacion sobre el grupo, incluyendo personas, lineas de investigacion, seminarios, noticias y oportunidades academicas.
+Institutional website for a research group in theoretical computer science. The application presents information about the group, including people, research areas, seminars, news, and academic opportunities.
 
-## Descripcion general
+## General Description
 
-Este proyecto es una aplicacion web ligera desarrollada en **Python** usando **Flask**. El contenido se renderiza en el servidor mediante plantillas HTML, mientras que parte de la informacion del sitio se gestiona desde un archivo `JSON`.
+This project is a lightweight web application developed in **Python** using **Flask**. The content is rendered on the server through HTML templates, while part of the site information is managed from a `JSON` file.
 
-El objetivo del proyecto es ofrecer un sitio sencillo de mantener, facil de desplegar y adecuado para contenido academico e institucional.
+The goal of the project is to provide a website that is simple to maintain, easy to deploy, and suitable for academic and institutional content.
 
-## Tecnologias utilizadas
+## Technologies Used
 
-- **Python** como lenguaje principal.
-- **Flask** como framework web.
-- **Jinja2** para el renderizado de plantillas HTML dinamicas.
-- **HTML5** para la estructura de las paginas.
-- **CSS3** para estilos personalizados.
-- **Bootstrap 5** para maquetacion responsive y componentes visuales.
-- **JSON** para almacenar parte del contenido del sitio.
-- **Vercel** como plataforma de despliegue configurada.
+* **Python** as the main programming language.
+* **Flask** as the web framework.
+* **Jinja2** for rendering dynamic HTML templates.
+* **HTML5** for page structure.
+* **CSS3** for custom styles.
+* **Bootstrap 5** for responsive layout and visual components.
+* **JSON** to store part of the site content.
+* **Vercel** as the configured deployment platform.
 
-## Estructura del proyecto
+## Project Structure
 
 ```text
 research-site-/
@@ -40,58 +40,48 @@ research-site-/
 │   └── opportunities.html
 ```
 
-## Funcionamiento
+## How It Works
 
-El archivo `app.py` define la aplicacion Flask, carga los datos desde `data.json`, registra las rutas y renderiza las vistas correspondientes.
+The `app.py` file defines the Flask application, loads the data from `data.json`, registers the routes, and renders the corresponding views.
 
-Las plantillas del sitio se encuentran en `templates/` y comparten una estructura base comun. Los recursos estaticos, como hojas de estilo e imagenes, se almacenan en `static/`.
+The site templates are located in `templates/` and share a common base structure. Static resources, such as stylesheets and images, are stored in `static/`.
 
-## Secciones del sitio
+## Site Sections
 
-El sitio incluye las siguientes secciones principales:
+The site includes the following main sections:
 
-- **Home**
-- **People**
-- **Research**
-- **Seminars**
-- **Opportunities**
+* **Home**
+* **People**
+* **Research**
+* **Seminars**
+* **Opportunities**
 
-## Gestion del contenido
+## Content Management
 
-Parte del contenido se mantiene en `data.json`, lo que permite actualizar informacion del sitio sin modificar directamente la logica principal de la aplicacion.
+Part of the content is maintained in `data.json`, allowing site information to be updated without directly modifying the main application logic.
 
-Entre los datos gestionados se incluyen:
+The managed data includes:
 
-- informacion general del grupo
-- noticias recientes
-- personas
-- temas de investigacion
-- seminarios
+* general information about the group
+* recent news
+* people
+* research topics
+* seminars
 
-## Despliegue
+## Deployment
 
-El proyecto incluye un archivo `vercel.json`, por lo que esta preparado para desplegarse en **Vercel** con soporte para aplicaciones Python.
+The project includes a `vercel.json` file, so it is prepared to be deployed on **Vercel** with support for Python applications.
 
-## Ejecucion local
+## Local Execution
 
-Instalacion de dependencias:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Ejecucion del servidor:
+Run the server:
 
 ```bash
 python app.py
 ```
-
-Acceso local:
-
-```text
-http://127.0.0.1:5000
-```
-
-## Notas
-
-Este README evita incluir informacion personal, credenciales o datos sensibles. Si el proyecto va a publicarse de forma abierta, conviene revisar periodicamente el contenido de `data.json`, las imagenes y cualquier configuracion de despliegue para asegurar que no se exponga informacion que no deba ser publica.
