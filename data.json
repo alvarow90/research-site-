@@ -53,14 +53,14 @@
         }
     ],
     "people": [
-        {"name": "Dr Damian Arellanes", "email": "damian.arellanes@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Damian.jpg"},
-        {"name": "Dr Marco Caminati", "email": "m.caminati@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Marco.jpg"},
-        {"name": "Dr Fabien Dufoulon", "email": "f.dufoulon@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Fabien.jpg"},
-        {"name": "Dr Fabio Papacchini", "email": "f.papacchini@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Fabio.jpg"},
-        {"name": "Dr Andrew Sogokon", "email": "a.sogokon@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Andrew.jpg"},
-        {"name": "Dr Pascal Welke", "email": "p.welke@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Pascal.jpg"},
-        {"name": "Dr Uraz Turker", "email": "u.turker@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Uraz.jpg"},
-        {"name": "Dr Tobias Meggendorfer", "email": "t.meggendorfer@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Tobias.jpg"}
+        {"name": "Dr Damian Arellanes", "email": "damian.arellanes@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Damian.jpg", "website": "https://damianarellanes.com"},
+        {"name": "Dr Marco Caminati", "email": "m.caminati@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Marco.jpg", "website": "https://www.lancaster.ac.uk/security-lancaster/about/people/marco-caminati"},
+        {"name": "Dr Fabien Dufoulon", "email": "f.dufoulon@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Fabien.jpg", "website": "https://fabiendufoulon.github.io"},
+        {"name": "Dr Fabio Papacchini", "email": "f.papacchini@lancaster.ac.uk", "theme": ["Logic, Semantics and Computation", "Formal Methods"], "image": "Fabio.jpg", "website": "https://www.lancaster.ac.uk/security-lancaster/about/people/fabio-papacchini"},
+        {"name": "Dr Andrew Sogokon", "email": "a.sogokon@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Andrew.jpg", "website": "https://www.lancaster.ac.uk/scc/about-us/people/andrew-sogokon"},
+        {"name": "Dr Pascal Welke", "email": "p.welke@lancaster.ac.uk", "theme": ["Design and Analysis of Algorithms"], "image": "Pascal.jpg", "website": "https://pwelke.de"},
+        {"name": "Dr Uraz Turker", "email": "u.turker@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Uraz.jpg", "website": "https://www.lancaster.ac.uk/scc/about-us/people/uraz-turker"},
+        {"name": "Dr Tobias Meggendorfer", "email": "t.meggendorfer@lancaster.ac.uk", "theme": ["Formal Methods"], "image": "Tobias.jpg", "website": "https://tobias.meggendorfer.de"}
     ],
     "seminars": [
         {
