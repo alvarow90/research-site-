@@ -8,7 +8,13 @@
     <div class="col">
         <div class="card h-100 text-center border-0 shadow-sm">
             <div class="card-body">
+                {% if person.website %}
+                <a href="{{ person.website }}" class="person-link" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ url_for('static', filename='images/' ~ person.image) }}" class="rounded-circle mb-3" alt="{{ person.name }}" width="120" height="120" style="object-fit: cover;">
+                </a>
+                {% else %}
                 <img src="{{ url_for('static', filename='images/' ~ person.image) }}" class="rounded-circle mb-3" alt="{{ person.name }}" width="120" height="120" style="object-fit: cover;">
+                {% endif %}
                 <h5 class="card-title">
                     {% if person.website %}
                     <a href="{{ person.website }}" class="person-link" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
